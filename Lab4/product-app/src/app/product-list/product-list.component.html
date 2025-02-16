@@ -1,0 +1,13 @@
+<div class="product-list-container">
+  <div *ngFor="let product of products" class="product">
+    <a class="link-product" [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+      <img class="product-photo" [src]="product.image" alt="Exterior photo of {{product.name}}">
+      <h2 class="product-heading">{{ product.name }}</h2>
+      <p class="product-value">Rating: <strong>{{ product.rating }}/5</strong></p>
+      <p class="product-description">{{ product.description }}</p>
+      <p class="product-value">Price: <strong>{{ product.price | currency: '₸'}}</strong> </p>
+    </a>
+    <button type="button" (click)="share(product.link, product.name)">Share</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+  </div>
+</div>

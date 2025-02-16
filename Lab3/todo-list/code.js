@@ -25,7 +25,8 @@ function addTask() {
   cl.appendChild(document.createTextNode("X"));
   cl.onclick = function () {
     let parent = cl.parentElement;
-    parent.remove();
+    document.getElementById("deleted").appendChild(parent);
+    // parent.remove();
   };
   newTask.appendChild(cl);
   if (textS === "") {
