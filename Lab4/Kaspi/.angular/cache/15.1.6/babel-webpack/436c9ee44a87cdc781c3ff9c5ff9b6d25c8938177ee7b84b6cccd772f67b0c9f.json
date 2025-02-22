@@ -1,1 +1,0 @@
-{"ast":null,"code":"export function noop() {}","map":{"version":3,"names":["noop"],"sources":["/Users/uakks/Documents/KBTU/4th sem/Web-Dev/Lab4/Kaspi/node_modules/rxjs/dist/esm/internal/util/noop.js"],"sourcesContent":["export function noop() { }\n"],"mappings":"AAAA,OAAO,SAASA,IAAI,GAAG,CAAE"},"metadata":{},"sourceType":"module","externalDependencies":[]}
