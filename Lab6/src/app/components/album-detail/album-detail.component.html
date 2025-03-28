@@ -1,0 +1,9 @@
+<div *ngIf="album">
+    <h2>Album Details</h2>
+    <label>Title: </label>
+    <input [(ngModel)]="album.title" />
+    <button (click)="saveAlbum()">Save</button>
+    <button (click)="goBack()">Return</button>
+    <button (click)="goToPhotos()">Photos</button>
+    <img [src]="this.albumsService.getAlbumPhotos(this.album.id)"/>
+  </div>
